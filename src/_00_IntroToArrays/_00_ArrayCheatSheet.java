@@ -67,5 +67,7 @@ public class _00_ArrayCheatSheet {
 		
 		//12. print only the last element in the array
 		
+		System.out.println("the last element is" + intArray.length);
+		
 	}
 }
