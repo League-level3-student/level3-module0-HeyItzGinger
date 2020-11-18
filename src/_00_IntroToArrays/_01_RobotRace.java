@@ -26,8 +26,11 @@ public class _01_RobotRace {
 		boolean b = false;
 		while (b == false) {
 			for (int n = 0; n < robArray.length; n++) {
-				int g = random.nextInt(50);
+				int g = random.nextInt(250);
 				robArray[n].move(g);
+				for(int l = 0; l < robArray.length; l++) {
+					robArray[l].turn(10);
+				}
 
 				if (robArray[n].getY() <= 0) {
 					b = true;
